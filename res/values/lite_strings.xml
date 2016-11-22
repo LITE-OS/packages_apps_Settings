@@ -16,6 +16,11 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<!-- Changelog -->
+    <string name="changelog_custom_title">Changelog</string>
+    <string name="changelog_custom_summary">List of changes</string>
+    <string name="changelog_custom_error">Unable to load changelog</string>
+
 <!-- Statusbar icon -->
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>

@@ -18,6 +18,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<!-- Changelog -->
+  <string name="changelog_custom_title">Список изменений</string>
+  <string name="changelog_custom_summary">Чейджлог с последнего обновления</string>
+  <string name="changelog_custom_error">Ошибка загрузки списка изменений</string>
+
 <!-- Statusbar icon -->
   <string name="status_bar_icon_blacklist_title">Значки в строке состояния</string>
   <string name="status_bar_icon_blacklist_summary">Настроить какие иконки отображаются в строке состояния</string>
