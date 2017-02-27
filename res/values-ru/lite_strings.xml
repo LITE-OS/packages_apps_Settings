@@ -153,4 +153,21 @@
   <string name="twilight_mode_location_disabled">Доступ к местоположению отключен</string>
   <string name="twilight_mode_location_enable">Включить</string>
 
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> — <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">отключена</string>
+  <string name="sim_missing">отсутствует или неисправна</string>
+  <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
+  <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+  <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы действительно хотите продолжить?</string>
+  <string name="sim_enabler_airplane_on">Выполнение операции невозможно при включённом режиме полёта.</string>
+  <string name="sim_enabler_in_call">Выполнение операции невозможно во время вызова.</string>
+  <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
+  <string name="sim_enabler_enabling">Включение/u2026</string>
+  <string name="sim_enabler_disabling">Отключение\u2026</string>
+  <string name="sub_activate_success">SIM-карта включена.</string>
+  <string name="sub_activate_failed">Ошибка активации.</string>
+  <string name="sub_deactivate_success">SIM-карта отключена.</string>
+  <string name="sub_deactivate_failed">Ошибка при отключении.</string>
+
 </resources>
