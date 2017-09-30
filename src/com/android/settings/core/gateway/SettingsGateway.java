@@ -135,6 +135,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.lite.settings.LiteSettings;
 import com.lite.settings.fragments.NavigationBarSettings;
+import com.lite.settings.fragments.QuickSettings;
+
 public class SettingsGateway {
 
     /**
@@ -259,6 +261,7 @@ public class SettingsGateway {
             LiteSettings.class.getName(),
             NavigationBarSettings.class.getName(),
             AmbientDisplaySettings.class.getName()
+            QuickSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
