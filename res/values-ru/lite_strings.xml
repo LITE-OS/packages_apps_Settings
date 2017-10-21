@@ -149,4 +149,8 @@
   <string name="app_ops_answer_phone_calls">Ответить на звонок</string>
   <string name="app_ops_boot_completed">Автозапуск</string>
 
+  <string name="twilight_mode_location_dialog">Обнаружение местоположения отключено</string>
+  <string name="twilight_mode_location_disabled">Доступ к местоположению отключен</string>
+  <string name="twilight_mode_location_enable">Включить</string>
+
 </resources>
