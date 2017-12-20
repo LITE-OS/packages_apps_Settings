@@ -45,4 +45,10 @@
 <!-- Category -->
   <string name="lite_category_interface">Interface</string>
 
+<!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Ui style</string>
+  <string name="systemui_theme_style_auto">Wallpaper based</string>
+  <string name="systemui_theme_style_light">Light</string>
+  <string name="systemui_theme_style_dark">Dark</string>
+
 </resources>

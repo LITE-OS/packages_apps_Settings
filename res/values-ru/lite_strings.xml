@@ -46,5 +46,11 @@
 
 <!-- Unlink notification volume -->
   <string name="link_volume_option_title">Объединить громкость звонка и уведомлений</string>
+
+<!-- Systemui theme -->
+  <string name="systemui_theme_style_title">Стиль интерфейса</string>
+  <string name="systemui_theme_style_auto">На основе обоев</string>
+  <string name="systemui_theme_style_light">Светлый</string>
+  <string name="systemui_theme_style_dark">Темный</string>
   
 </resources>
