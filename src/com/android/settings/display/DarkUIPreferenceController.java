@@ -36,7 +36,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 public class DarkUIPreferenceController extends AbstractPreferenceController implements
-        Preference.OnPreferenceChangeListener {
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
     private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
     private ListPreference mSystemUIThemeStyle;
