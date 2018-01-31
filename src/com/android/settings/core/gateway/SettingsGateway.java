@@ -137,6 +137,7 @@ import com.lite.settings.LiteSettings;
 import com.lite.settings.fragments.NavigationBarSettings;
 import com.lite.settings.fragments.QuickSettings;
 import com.lite.settings.fragments.NotificationSettings;
+import com.lite.settings.fragments.ExpandedDesktop;
 
 public class SettingsGateway {
 
@@ -263,7 +264,8 @@ public class SettingsGateway {
             NavigationBarSettings.class.getName(),
             AmbientDisplaySettings.class.getName(),
             QuickSettings.class.getName(),
-            NotificationSettings.class.getName()
+            NotificationSettings.class.getName(),
+            ExpandedDesktop.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -303,5 +305,6 @@ public class SettingsGateway {
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.LiteSettingsActivity.class.getName(),
+            Settings.ExpandedDesktopSettingsActivity.class.getName(),
     };
 }
