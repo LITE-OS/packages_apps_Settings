@@ -9,4 +9,12 @@
     <!-- Pixel color on sim card -->
     <string name="pixel_sim_color">Pixel</string>
 
+    <!-- SystemUI theme -->
+    <string name="theme_category_title">System theme</string>
+    <string name="systemui_theme_style_title">SystemUI theme</string>
+    <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
+    <string name="systemui_theme_style_light">Light</string>
+    <string name="systemui_theme_style_dark">Dark</string>
+    <string name="system_theme_style_black">Black</string>
+
 </resources>
