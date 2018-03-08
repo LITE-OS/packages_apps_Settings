@@ -170,4 +170,8 @@
   <string name="sub_deactivate_success">SIM-карта отключена.</string>
   <string name="sub_deactivate_failed">Ошибка при отключении.</string>
 
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Предотвращать случайные пробуждения</string>
+  <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
+
 </resources>
