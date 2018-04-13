@@ -71,6 +71,7 @@
     <string name="fp_quick_pulldown_summary">Expand the quick settings panel with only one swipe on the fingerprint sensor.</string>
     
 <!-- Font picker -->
-    <string name="font_picker_title">Font</string>    
+    <string name="font_picker_title">Font</string>
+    <string name="font_picker_progress">Applying new font\u2026</string>
 
 </resources>
