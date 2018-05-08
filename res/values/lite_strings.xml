@@ -37,5 +37,9 @@
 
     <!-- Unlink notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
+    
+    <!-- LiteOS Settings -->
+    <string name="lite_settings_activity">LiteOS</string>
+    <string name="lite_settings_activity_summary">Additional Customizations</string>
 
 </resources>
