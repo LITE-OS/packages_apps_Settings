@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Advanced night mode brightness -->
+<!-- Advanced night mode brightness -->
     <string name="night_brightness_category">Brightness</string>
     <string name="night_brightness_value_title">Lower brightness if Night Light</string>
     <string name="night_bright_disabled">Disabled</string>
@@ -24,22 +24,25 @@
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_medium">Medium brightness</string>
 
-    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+<!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
-    <!-- Reset battery stats -->
+<!-- Reset battery stats -->
     <string name="ok">Ok</string>
     <string name="menu_stats_reset">Reset stats</string>
     <string name="reset_stats_msg">Battery history stats are going to be reset</string>
 
-    <!-- Screenshot shutter sound -->
+<!-- Screenshot shutter sound -->
     <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
 
-    <!-- Unlink notification volume -->
+<!-- Unlink notification volume -->
     <string name="link_volume_option_title">Link ring and notification volume</string>
-    
-    <!-- LiteOS Settings -->
+
+<!-- LiteOS Settings -->
     <string name="lite_settings_activity">LiteOS</string>
     <string name="lite_settings_activity_summary">Additional Customizations</string>
+
+<!-- Category -->
+  <string name="lite_category_interface">Interface</string>
 
 </resources>

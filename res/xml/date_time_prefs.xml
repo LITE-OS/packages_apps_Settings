@@ -53,5 +53,14 @@
     <SwitchPreference
         android:key="24 hour"
         android:title="@string/date_time_24hour" />
+        
+    <PreferenceCategory
+        android:title="@string/lite_category_interface">
+        	<Preference
+        		android:key="clock_settings"
+        		android:title="@string/status_bar_clock"
+        		android:summary="@string/status_bar_clock_summary"
+        		android:fragment="com.lite.settings.fragments.ClockDateSettings" />
+    </PreferenceCategory>        
 
 </PreferenceScreen>
