@@ -44,6 +44,20 @@
             android:selectable="false"/>
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/lite_category_interface">
+            <Preference
+        		android:key="battery_settings"
+        		android:title="@string/battery_settings_title"
+        		android:summary="@string/battery_settings_summary"
+        		android:fragment="com.lite.settings.fragments.BatterySettings" />
+        		
+        	<SwitchPreference
+            	android:key="battery_percentage"
+            	android:title="@string/battery_percentage"
+            	android:summary="@string/battery_percentage_description"/>	
+    </PreferenceCategory>    
 
     <PreferenceCategory
         android:key="power_management"
@@ -54,10 +68,6 @@
             android:key="battery_saver_summary"
             android:title="@string/battery_saver"/>
 
-        <SwitchPreference
-            android:key="battery_percentage"
-            android:title="@string/battery_percentage"
-            android:summary="@string/battery_percentage_description"/>
 
         <!-- Cross-listed item, if you change this, also change it in display_settings.xml -->
         <SwitchPreference

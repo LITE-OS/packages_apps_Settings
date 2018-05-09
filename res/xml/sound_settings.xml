@@ -47,6 +47,13 @@
                 android:icon="@*android:drawable/ic_audio_ring_notif"
                 android:title="@string/notification_volume_option_title" />
 
+        <!-- Link Volume Notification -->
+        <SwitchPreference
+                android:key="volume_link_notification"
+                android:title="@string/link_volume_option_title"
+                android:persistent = "false"
+                android:defaultValue = "true" />
+
         <!-- Also vibrate for calls -->
         <SwitchPreference
                 android:key="vibrate_when_ringing"
@@ -105,6 +112,11 @@
         <SwitchPreference
           android:key="screen_locking_sounds"
           android:title="@string/screen_locking_sounds_title" />
+
+        <!-- Screenshot shutter sound -->
+        <SwitchPreference
+          android:key="screenshot_shutter_sound"
+          android:title="@string/screenshot_shutter_sound_title" />
 
         <!-- Charging sounds -->
         <SwitchPreference
