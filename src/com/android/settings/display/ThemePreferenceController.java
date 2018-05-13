@@ -32,6 +32,7 @@ import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.drawer.SettingsDrawerActivity;
 
 import libcore.util.Objects;
 
@@ -39,6 +40,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_THEME;
+
+import android.content.Intent;
+import android.os.Handler;
+import android.widget.Toast;
+import android.provider.Settings;
 
 public class ThemePreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
@@ -119,6 +125,11 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
         } catch (RemoteException e) {
             return false;
         }
+        Settings.System.putString(mContext.getContentResolver(), Settings.System.SYSTEM_THEME_CURRENT_OVERLAY, (String) newValue);
+        try {
+            reload();
+        }catch (Exception ignored){
+        }
         return true;
     }
 
@@ -137,7 +148,9 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
                     UserHandle.myUserId());
             for (int i = 0, size = infos.size(); i < size; i++) {
                 if (infos.get(i).isEnabled() &&
-                        isChangeableOverlay(infos.get(i).packageName)) {
+                        isChangeableOverlay(infos.get(i).packageName) &&
+                        !infos.get(i).packageName.equals("com.android.system.theme.dark") &&
+                        !infos.get(i).packageName.equals("com.android.system.theme.black")) {
                     return infos.get(i).packageName;
                 }
             }
@@ -148,7 +161,6 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
     @Override
     public boolean isAvailable() {
-        if (mOverlayService == null) return false;
         String[] themes = getAvailableThemes();
         return themes != null && themes.length > 1;
     }
@@ -167,7 +179,9 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
             List<String> pkgs = new ArrayList(infos.size());
             for (int i = 0, size = infos.size(); i < size; i++) {
                 if (isChangeableOverlay(infos.get(i).packageName)) {
-                    pkgs.add(infos.get(i).packageName);
+                    if (!infos.get(i).packageName.equals("com.android.system.theme.dark") && 
+                        !infos.get(i).packageName.equals("com.android.system.theme.black"))
+                        pkgs.add(infos.get(i).packageName);
                 }
             }
             return pkgs.toArray(new String[pkgs.size()]);
@@ -193,5 +207,26 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
                 throws RemoteException {
             return mService.getOverlayInfosForTarget(target, userId);
         }
+    }
+
+    private void reload(){
+        Intent intent2 = new Intent(Intent.ACTION_MAIN);
+        intent2.addCategory(Intent.CATEGORY_HOME);
+        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(intent2);
+        Toast.makeText(mContext, R.string.applying_theme_toast, Toast.LENGTH_SHORT).show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+              @Override
+              public void run() {
+                  Intent intent = new Intent(Intent.ACTION_MAIN);
+                  intent.setClassName("com.android.settings",
+                        "com.android.settings.Settings$DisplaySettingsActivity");
+                  intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                  intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
+                  mContext.startActivity(intent);
+                  Toast.makeText(mContext, R.string.theme_applied_toast, Toast.LENGTH_SHORT).show();
+              }
+        }, 2000);
     }
 }

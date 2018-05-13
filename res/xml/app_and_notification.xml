@@ -77,5 +77,17 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.Settings$SpecialAccessSettingsActivity" />
     </Preference>
+    
+    <Preference
+        android:key="background_check"
+        android:fragment="com.android.settings.applications.BackgroundCheckSummary"
+        android:title="@string/background_check_pref" 
+        android:summary="@string/background_check_pref_summary" />
+        
+    <Preference
+        android:key="running_apps"
+        android:title="@string/runningservices_settings_title"
+        android:summary="@string/runningservices_settings_summary"
+        android:fragment="com.android.settings.applications.RunningServices" />    
 
 </PreferenceScreen>

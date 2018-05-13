@@ -2802,8 +2802,8 @@
     <string name="network_dashboard_summary_data_usage" msgid="3843261364705042212">"передача данных"</string>
     <string name="network_dashboard_summary_hotspot" msgid="8494210248613254574">"точка доступа"</string>
     <string name="connected_devices_dashboard_title" msgid="2355264951438890709">"Подключенные устройства"</string>
-    <string name="connected_devices_dashboard_summary" msgid="2390582103384791904">"Bluetooth, трансляция, NFC"</string>
-    <string name="connected_devices_dashboard_no_nfc_summary" msgid="9106040742715366495">"Bluetooth, трансляция"</string>
+    <string name="connected_devices_dashboard_summary" msgid="2390582103384791904">"Bluetooth, кнопки, NFC"</string>
+    <string name="connected_devices_dashboard_no_nfc_summary" msgid="9106040742715366495">"Bluetooth, Кнопки"</string>
     <string name="app_and_notification_dashboard_title" msgid="7838365599185397539">"Приложения и уведомления"</string>
     <string name="app_and_notification_dashboard_summary" msgid="2363314178802548682">"Разрешения, приложения по умолчанию"</string>
     <string name="account_dashboard_title" msgid="4936890821712178853">"Пользователи и аккаунты"</string>
