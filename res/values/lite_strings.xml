@@ -41,6 +41,7 @@
 <!-- LiteOS Settings -->
     <string name="lite_settings_activity">LiteOS</string>
     <string name="lite_settings_activity_summary">Additional Customizations</string>
+    <string name="background_check_pref_summary">Access in the background</string>
 
 <!-- Category -->
   <string name="lite_category_interface">Interface</string>

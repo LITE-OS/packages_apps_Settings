@@ -55,12 +55,6 @@
         settings:useAdditionalSummary="true"/>
 
     <Preference
-        android:key="running_apps"
-        android:title="@string/runningservices_settings_title"
-        android:summary="@string/runningservices_settings_summary"
-        android:fragment="com.android.settings.applications.RunningServices" />
-
-    <Preference
         android:key="convert_to_file_encryption"
         android:title="@string/convert_to_file_encryption"
         android:summary="@string/convert_to_file_encryption_enabled"
@@ -412,13 +406,6 @@
             android:title="@string/app_process_limit_title"
             android:entries="@array/app_process_limit_entries"
             android:entryValues="@array/app_process_limit_values" />
-
-
-        <Preference
-                android:key="background_check"
-                android:fragment="com.android.settings.applications.BackgroundCheckSummary"
-                android:title="@string/background_check_pref" />
-
 
         <SwitchPreference
             android:key="show_all_anrs"

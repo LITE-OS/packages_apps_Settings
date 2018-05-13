@@ -21,6 +21,7 @@
 <!-- LiteOS Settings -->
   <string name="lite_settings_activity">LiteOS</string>
   <string name="lite_settings_activity_summary">Дополнительные настройки</string>
+  <string name="background_check_pref_summary">Доступ в фоновом режиме</string>
   
 <!-- Category -->  
   <string name="lite_category_interface">Интерфейс</string>
