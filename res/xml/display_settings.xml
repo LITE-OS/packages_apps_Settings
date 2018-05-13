@@ -133,6 +133,12 @@
             android:persistent="false"
             android:entries="@array/systemui_theme_style_entries"
             android:entryValues="@array/systemui_theme_style_values" />
+
+        <Preference
+            android:key="quicksettings"
+            android:fragment="com.lite.settings.fragments.QuickSettings"
+            android:title="@string/quicksettings_category"
+            android:summary="@string/quicksettings_summary" />
     </PreferenceCategory>
 
 </PreferenceScreen>
