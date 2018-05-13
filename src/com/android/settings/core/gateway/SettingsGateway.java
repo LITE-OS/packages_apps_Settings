@@ -133,6 +133,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.lite.settings.LiteSettings;
+import com.lite.settings.fragments.NavigationBarSettings;
 public class SettingsGateway {
 
     /**
@@ -254,7 +255,8 @@ public class SettingsGateway {
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
-            LiteSettings.class.getName()
+            LiteSettings.class.getName(),
+            NavigationBarSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
