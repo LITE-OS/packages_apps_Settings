@@ -43,4 +43,9 @@
 
     </PreferenceCategory>
 
+    <Preference
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+            android:fragment="com.lite.settings.fragments.LockScreenSettings" />
+
 </PreferenceScreen>
