@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 Cardinal-AOSP Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Lite menus -->
+	<string name="lite_settings_title">LiteOS</string>
+	<string name="keywords_lite">LiteOS</string>
+
+<!-- misc -->
+    <string name="statusbar_title">StatusBar</string>
+    <string name="statusbar_summary">Options for customizing statusbar, qs, notifications etc.</string>
+    <string name="buttons_title">Buttons</string>
+    <string name="navbar_buttons_title">Navigation bar layout</string>
+    <string name="navbar_buttons_summary">Configure on-screen navigation bar layout and custom buttons</string>
+
+<!-- Network traffic -->
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_summary">Option to show net activity meter on status bar</string>
+    <string name="network_traffic_state_title">Net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="show_network_traffic_disable">Disabled</string>
+    <string name="show_network_traffic_up">Enable</string>
+    <string name="show_network_traffic_down">Incoming</string>
+    <string name="show_network_traffic_all">Outgoing and incoming</string>
+    
+<!-- Status bar clock options -->
+    <string name="clock_category">Clock</string>
+    <string name="status_bar_clock">Clock and Date</string>
+    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock_seconds_title">Show seconds</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="right_clock">Right clock</string>
+    <string name="center_clock">Center clock</string>
+    <string name="left_clock">Left clock</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    
+<!-- Battery styles -->
+	<string name="battery_settings_title">Battery Settings</string>
+    <string name="battery_settings_summary">Customize Battery styles</string>
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the battery icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
+    <string name="show_battery_percent_title">Show battery percentage</string>
+    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
+    <string name="battery_percent_hidden">Hidden</string>
+    <string name="battery_percent_outside">Outside</string>
+    <string name="battery_percent_inside">Inside</string>
+    
+<!-- Custom rebindings -->
+    <string name="home_key_title">Home button</string>
+    <string name="back_key_title">Back button</string>
+    <string name="menu_key_title">Menu button</string>
+    <string name="assist_key_title">Assist button</string>
+    <string name="app_switch_key_title">Recents button</string>
+    <string name="camera_key_title">Camera button</string>
+    <string name="short_press_title">Short press action</string>
+    <string name="long_press_title">Long press action</string>
+    <string name="double_tap_title">Double tap action</string>
+    <string name="action_nothing">No action</string>
+    <string name="action_menu">Open/close menu</string>
+    <string name="action_app_switch">Recents</string>
+    <string name="action_search">Search assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_in_app_search">In-app search</string>
+    <string name="action_launch_camera">Open camera</string>
+    <string name="action_last_app">Launch last app</string>
+    <string name="action_splitscreen">Splitscreen</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_partial_screenshot">Partial screenshot</string>
+    <string name="action_screen_off">Screen off</string>
+ 
+    
+<!-- Navigation bar -->
+   <string name="navigationbar_settings_title">Navigation bar</string>
+   <string name="navigationbar_settings_summary">Configure navigation buttons</string>
+   <string name="hardwarekeys_cat_title">Hardware Keys</string>  
+   <string name="navigation_bar_show_title">Show navigation bar</string>
+   <string name="navigation_bar_show_summary">Force enable on-screen navigation bar</string>
+   
+   
+<!-- Swap navigation keys -->
+   <string name="swap_navigation_keys_title">Swap keys</string>
+   <string name="swap_navigation_keys_title_summary">Swap back and recents hardware keys</string>
+   
+<!-- Torch Power button gestures -->
+   <string name="torch_power_button_gesture_title">Screen off power button torch</string>
+   <string name="torch_power_button_gesture_none">Disabled</string>
+   <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
+   <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+    
+<!-- Volume button wake -->
+   <string name="volbtn_wake_device_title">Volume button wake</string>
+   <string name="button_wake_summary">May not wake device if music control is active and music is playing</string>
+   <string name="vol_dnd_category_title">Do not disturb mode</string>
+   <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+   <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
+   <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+   <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
+   
+<!-- Incall Home button behavior-->
+   <string name="allow_incall_home_title">Home button when ringing</string>
+   <string name="allow_incall_home_summary">Allow to use home button when incoming call is ringing</string>
+   
+<!-- ANBI -->
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with hardware navigation buttons while the screen is being touched</string>
+    
+<!-- Buttons Backlight -->
+    <string name="button_backlight_cat">Button backlight</string>
+    <string name="button_backlight_on_touch_only_title">Button touch</string>
+    <string name="button_backlight_on_touch_only_summary">Enable backlight with timout only on button touch</string>
+    <string name="button_backlight_enable_title">Enable</string>
+    <string name="button_manual_brightness">Brightness level, disabled on value 0</string>
+    
+<!-- Buttons backlight timeout -->
+    <string name="backlight_timeout_title">Backlight timeout</string>
+    <string name="backlight_timeout_on">Enabled always</string>
+    <string name="backlight_timeout_3s">3 sec</string>
+    <string name="backlight_timeout_default">5 sec (default)</string>
+    <string name="backlight_timeout_10s">10 sec</string>
+    <string name="backlight_timeout_15s">15 sec</string>
+    <string name="backlight_timeout_20s">20 sec</string>
+    <string name="backlight_timeout_30s">30 sec</string>      
+
+<!-- Quick settings tiles columns and rows config -->
+    <string name="quicksettings_category">QuickSettings</string>
+    <string name="quicksettings_summary">Configure QS layout</string>
+    <string name="qs_layout_category">QS tiles layout</string>
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <string name="qs_tile_title_visibility_title">QS tile titles</string>
+    <string name="qs_tile_title_visibility_summary_on">QS tiles titles are now visible</string>
+    <string name="qs_tile_title_visibility_summary_off">QS tiles titles are now gone</string>
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>    
+    <string name="brightness_icon_title">Brightness icon</string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brightness slider to toggle auto-brightness</string>
+    <string name="qs_footer_warnings_title">QS footer warnings</string>
+    <string name="qs_footer_warnings_summary">Display a warning at bottom of the QS panel while your network is monitored by external apps or a VPN</string>
+
+<!-- LockScreenSettings -->
+    <string name="lockscreen_title">Lockscreen</string>
+    <string name="lockscreen_summary">Lockscreen customizations.</string>
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
+    <string name="lockscreen_hide_shortcuts_title">Hide bottom Shortcuts</string>
+    <string name="lockscreen_hide_shortcuts_summary">Hide bottom shortcuts on secure lock screens</string>
+    <string name="lockscreen_qs_disabled_title">Secured quick settings</string>
+    <string name="lockscreen_qs_disabled_summary">Prevent expanding quick settings on secure lock screens</string>
+    <string name="lockscreen_power_menu_disabled_title">Secured power menu</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lockscreen</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage on lockscreen</string>
+    <string name="fp_unlock_keystore_title">FP unlock</string>
+    <string name="fp_unlock_keystore_summary">Allow unlocking device using Fingerprint directly after boot\nNote: at your own risk!</string>
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
+</resources>
