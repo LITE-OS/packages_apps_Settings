@@ -37,7 +37,7 @@
 	<string name="show_network_traffic_up">Включить</string>
 	<string name="show_network_traffic_down">Входящий</string>
 	<string name="show_network_traffic_all">Исходящий и входящий</string>
-	
+
 <!-- Status bar clock options -->
     <string name="clock_category">Часы</string>
     <string name="status_bar_clock">Часы и дата</string>
@@ -72,7 +72,7 @@
     <string name="clock_date_style_lowercase">Строчные</string>
     <string name="clock_date_style_uppercase">Прописные</string>
     <string name="clock_date_format_custom">Пользовательский java-формат</string>	
-	
+
 <!-- Battery styles -->
 	<string name="battery_settings_title">Стиль батареи</string>
     <string name="battery_settings_summary">Настройки отображения батареи</string>
@@ -93,7 +93,7 @@
     <string name="navigationbar_settings_title">Панель навигации</string>
     <string name="navigationbar_settings_summary">Настройки панели навигации</string>
     <string name="hardwarekeys_cat_title">Аппаратные кнопки</string>
-  
+
 <!-- Custom rebindings -->
     <string name="home_key_title">Кнопка Домой</string>
     <string name="back_key_title">Кнопка Назад</string>
@@ -116,11 +116,11 @@
     <string name="action_screenshot">Скриншот</string>
     <string name="action_partial_screenshot">Скриншот выбранной области экрана</string>
     <string name="action_screen_off">Отключить экран</string>
-  
+
 <!-- Swap navigation keys -->
    <string name="swap_navigation_keys_title">Расположение кнопок</string>
    <string name="swap_navigation_keys_title_summary">Поменять местами кнопки: назад и меню</string>
-   
+
 <!-- Torch Power button gestures -->
    <string name="torch_power_button_gesture_title">Фонарик кнопкой питания</string>
    <string name="torch_power_button_gesture_none">Выкл</string>
@@ -139,22 +139,22 @@
     <string name="volbtn_down_zen_summary">Уменьшение громкости до предела включает режим Не беспокоить</string>
     <string name="volbtn_up_zen_title">Увеличение громкости в режиме Не беспокоить</string>
     <string name="volbtn_up_zen_summary">Увеличение громкости отключает режим Не беспокоить</string>
-  
+
 <!-- Incall Home button behavior-->
     <string name="allow_incall_home_title">Кнопка «Домой» при звонке</string>
     <string name="allow_incall_home_summary">Разрешить использование кнопки «Домой» при входящем звонке</string>
-  
+
 <!-- ANBI -->
     <string name="anbi_title">Случайное прикосновение</string>
     <string name="anbi_summary">Предотвращение нажатия кнопок навигации при касании экрана</string>
-  
+
 <!-- Buttons Backlight -->
     <string name="button_backlight_cat">Подсветка кнопок</string>
     <string name="button_backlight_on_touch_only_title">Подсветка при касании</string>
     <string name="button_backlight_on_touch_only_summary">Включать подсветку клавиш только после касания</string>
     <string name="button_backlight_enable_title">Включить</string>
     <string name="button_manual_brightness">Уровень яркость, отключена при значении 0</string>
-  
+
 <!-- Buttons backlight timeout -->
     <string name="backlight_timeout_title">Длительность подсветки кнопок</string>
     <string name="backlight_timeout_on">Всегда ВКЛ</string>
@@ -203,5 +203,15 @@
     <string name="fp_unlock_keystore_summary">Разрешить разблокировку отпечатком сразу после запуска устройства\nВнимание: использовать на свой страх и риск!</string>
     <string name="fprint_sucess_vib_title">Вибрация сканера отпечатка</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
+
+<!-- Color Picker -->
+	<string name="dialog_color_picker">Палитра цветов</string>
+	<string name="press_color_to_apply">Нажмите на цвет ниже для применения</string>
+	<string name="arrow_right">→</string>
+	<string name="arrow_down">↓</string>
+	<string name="hex">HEX:</string>
+	<string name="hex_hint">#ff000000</string>
+	<string name="set">Применить</string>
+	<string name="color_default">По умолчанию</string>
 
 </resources>
