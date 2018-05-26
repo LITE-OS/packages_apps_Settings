@@ -193,4 +193,5 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 // LiteOS additions
     public static class LiteSettingsActivity extends SettingsActivity {}
+    public static class AmbientDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }

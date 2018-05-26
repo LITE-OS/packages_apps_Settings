@@ -314,4 +314,32 @@
     <string name="heads_up_blacklist_title">Чёрный список</string>
     <string name="heads_up_whitelist_title">Белый список</string>
 
+<!-- Screen state service -->
+  <string name="screen_state_toggles_title">Действия в режиме ожидания</string>
+  <string name="screen_state_toggles_summary">Действия, выполняемые при выключенном экране</string>
+  <string name="screen_state_toggles_enable_title">Включить</string>
+  <string name="screen_state_toggles_enable_summary">Действия, выполняемые при выключении экрана. При включении возвращаются прежние состояния параметров.</string>
+  <string name="screen_state_toggles_mobile_title">Мобильные сети</string>
+  <string name="screen_state_toggles_location_title">Местоположение</string>
+  <string name="screen_state_toggles_twog">Использовать режим 2G</string>
+  <string name="screen_state_toggles_twog_summary">Режим передачи данных активной сети будет переключен в режим 2G</string>
+  <string name="screen_state_toggles_gps">Выключить GPS</string>
+  <string name="screen_state_toggles_gps_summary">Не использовать GPS при выключенном экране</string>
+  <string name="screen_state_toggles_mobile_data">Отключить мобильные данные</string>
+  <string name="screen_state_toggles_mobile_data_summary">Не использовать передачу данных при выключенном экране</string>
+  <string name="screen_state_off_delay_title">Отложить действия при выключении экрана</string>
+  <string name="screen_state_off_delay_summary">Отложить действия при выключении экрана на указанное количество секунд</string>
+  <string name="screen_state_on_delay_title">Отложить действия при включении экрана</string>
+  <string name="screen_state_on_delay_summary">Отложить действия при включении экрана на указанное количество секунд</string>
+
+<!-- Ambient Ticker -->
+  <string name="force_ambient_for_media_pref_title">Функция «Сейчас играет»</string>
+  <string name="force_ambient_for_media_pref_summary">Информация о текущем треке в режиме «Окружающие уведомления»</string>
+  <string name="ambient_ticker_footer">Функция позволяет отображать информацию о текущем треке на экране блокировки используя «Ambient Display».\n\nВы можете выбрать обычный или упрощенный режим отображния. Эта функция использует «Ambient Display» и так или иначе зависит от него. Она может быть вызвана без его использования с помощью принудительного режима.\n\nВ обычном режиме на экране отображаются часы, дата и информация о треке.\n\nВ упрощенном режиме часы и дата скрыты, информация о треке отображается по центру экрана.</string>
+  <string name="force_ambient_for_media_title">Выбрерите шаблон</string>
+  <string name="force_ambient_for_media_off">отключено</string>
+  <string name="force_ambient_for_media_on">Обычный</string>
+  <string name="force_ambient_for_media_on_forced">Обычный (принудительно)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Минимальный (принудительно)</string>
+
 </resources>
