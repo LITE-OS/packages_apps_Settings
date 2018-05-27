@@ -25,6 +25,7 @@
   
 <!-- Category -->  
   <string name="lite_category_interface">Интерфейс</string>
+  <string name="lite_category_vibrate">Вибросигналы</string>
 
 <!-- Advanced night mode brightness -->
   <string name="night_brightness_category">Яркость</string>
@@ -48,13 +49,10 @@
 <!-- Unlink notification volume -->
   <string name="link_volume_option_title">Объединить громкость звонка и уведомлений</string>
 
-<!-- Systemui theme -->
-  <string name="systemui_theme_style_title">Стиль интерфейса</string>
-  <string name="systemui_theme_style_auto">На основе обоев</string>
-  <string name="systemui_theme_style_light">Светлый</string>
-  <string name="systemui_theme_style_dark">Темный</string>
-  <string name="system_theme_style_black">Чёрный</string>
-  <string name="theme_applied_toast">Тема применена.</string>
-  <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string> 
+<!-- Incall vibrate options -->
+  <string name="incall_vibrate_connect_title">Вибрировать при ответе</string>
+  <string name="incall_vibrate_connect_summary">Включить вибрацию после ответа на вызов</string>
+  <string name="incall_vibrate_disconnect_title">Вибрировать при завершении</string>
+  <string name="incall_vibrate_disconnect_summary">Включить вибрацию после завершения вызова</string>  
 
 </resources>

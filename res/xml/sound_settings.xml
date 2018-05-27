@@ -54,11 +54,6 @@
                 android:persistent = "false"
                 android:defaultValue = "true" />
 
-        <!-- Also vibrate for calls -->
-        <SwitchPreference
-                android:key="vibrate_when_ringing"
-                android:title="@string/vibrate_when_ringing_title" />
-
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
                 android:key="zen_mode"
@@ -133,11 +128,6 @@
           android:key="touch_sounds"
           android:title="@string/touch_sounds_title" />
 
-        <!-- Vibrate on touch -->
-        <SwitchPreference
-          android:key="vibrate_on_touch"
-          android:title="@string/vibrate_on_touch_title" />
-
         <!-- Dock speaker plays -->
         <DropDownPreference
           android:key="dock_audio_media"
@@ -154,7 +144,38 @@
           android:key="emergency_tone"
           android:title="@string/emergency_tone_title"
           android:summary="%s" />
-    </PreferenceCategory>
+
+    </PreferenceCategory>          
+    
+    <PreferenceCategory
+        android:title="@string/lite_category_vibrate">
+          
+        <!-- Vibrate on touch -->
+        <SwitchPreference
+          android:key="vibrate_on_touch"
+          android:title="@string/vibrate_on_touch_title" />
+              
+        <!-- Also vibrate for calls -->
+        <SwitchPreference
+          android:key="vibrate_when_ringing"
+          android:title="@string/vibrate_when_ringing_title" />  
+            
+        <!-- vibrate on connect -->
+        <com.lite.settings.preference.SystemSettingSwitchPreference
+          android:key="vibrate_on_connect"
+          android:title="@string/incall_vibrate_connect_title"
+          android:summary="@string/incall_vibrate_connect_summary"
+          android:defaultValue="false" />
+            
+        <!-- vibrate on disconnect -->
+        <com.lite.settings.preference.SystemSettingSwitchPreference
+          android:key="vibrate_on_disconnect"
+          android:title="@string/incall_vibrate_disconnect_title"
+          android:summary="@string/incall_vibrate_disconnect_summary"
+          android:defaultValue="false" />
+         
+    </PreferenceCategory>   
+
 
     <com.android.settingslib.RestrictedPreference
       android:key="cell_broadcast_settings"

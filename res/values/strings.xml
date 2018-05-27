@@ -6768,7 +6768,7 @@
     <string name="ringtones_category_preference_title">Ringtones</string>
 
     <!-- Other sounds and vibrations preference category: Title for the Other sounds and vibrations preference categories. [CHAR LIMIT=none] -->
-    <string name="other_sound_category_preference_title">Other sounds and vibrations</string>
+    <string name="other_sound_category_preference_title">Other sounds</string>
 
     <!-- Configure Notifications Settings title. [CHAR LIMIT=30] -->
     <string name="configure_notification_settings">Notifications</string>
