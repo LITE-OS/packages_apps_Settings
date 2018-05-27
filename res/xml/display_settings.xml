@@ -133,6 +133,11 @@
             android:persistent="false"
             android:entries="@array/systemui_theme_style_entries"
             android:entryValues="@array/systemui_theme_style_values" />
+            
+        <Preference
+            android:key="accent_picker"
+            android:title="@string/theme_accent_picker_title"
+            android:summary="@string/theme_accent_picker_summary" />    
 
         <Preference
             android:key="quicksettings"

@@ -374,5 +374,11 @@
 <!-- Sensor block per-package -->
   <string name="sensor_block_title">Блокировка датчиков попакетно</string>
   <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>
+  
+<!-- Accents -->
+  <string name="accent_picker_dialog_title">Выберите оттенок цвета</string>
+  <string name="theme_accent_picker_title">Оттенок цвета</string>
+  <string name="theme_accent_picker_summary">Выберите оттенок цвета системной темы</string>
+  <string name="theme_accent_picker_default">По умолчанию</string>  
 
 </resources>
