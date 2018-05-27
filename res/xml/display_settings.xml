@@ -127,13 +127,6 @@
 
     <PreferenceCategory
         android:title="@string/lite_category_interface">
-        <ListPreference
-            android:key="systemui_theme_style"
-            android:title="@string/systemui_theme_style_title"
-            android:persistent="false"
-            android:entries="@array/systemui_theme_style_entries"
-            android:entryValues="@array/systemui_theme_style_values" />
-
         <Preference
             android:key="quicksettings"
             android:fragment="com.lite.settings.fragments.QuickSettings"
