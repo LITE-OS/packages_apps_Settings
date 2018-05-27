@@ -356,13 +356,6 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
-<!-- Systemui theme -->
-    <string name="systemui_theme_style_title">Ui style</string>
-    <string name="systemui_theme_style_auto">Wallpaper based</string>
-    <string name="systemui_theme_style_light">Light</string>
-    <string name="systemui_theme_style_dark">Dark</string>
-    <string name="system_theme_style_black">Black</string>
-
 <!-- Scrolling Cache -->
     <string name="pref_scrollingcache_title">Scrolling cache</string>
     <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
