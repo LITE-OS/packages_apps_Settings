@@ -18,13 +18,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <ListPreference
-        android:key="systemui_theme_style"
-        android:title="@string/systemui_theme_style_title"
-        android:persistent="false"
-        android:entries="@array/systemui_theme_style_entries"
-        android:entryValues="@array/systemui_theme_style_values" />
-
-    <ListPreference
         android:key="pref_scrollingcache"
         android:dialogTitle="@string/pref_scrollingcache_title"
         android:title="@string/pref_scrollingcache_title"
@@ -43,11 +36,5 @@
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
-
-    <com.lite.settings.preference.SystemSettingSwitchPreference
-        android:key="sensor_block"
-        android:title="@string/sensor_block_title"
-        android:summary="@string/sensor_block_summary"
-        android:defaultValue="false" />
 
 </PreferenceScreen>
