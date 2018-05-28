@@ -67,6 +67,12 @@
 			android:key="suspend_actions"
 			android:title="@string/screen_state_toggles_title"
 			android:fragment="com.lite.settings.fragments.SuspendActions" />
+			
+		<com.lite.settings.preference.SystemSettingSwitchPreference
+			android:key="sensor_block"
+			android:title="@string/sensor_block_title"
+			android:summary="@string/sensor_block_summary"
+			android:defaultValue="false" />	
 
         <com.android.settings.widget.MasterSwitchPreference
             android:fragment="com.android.settings.fuelgauge.BatterySaverSettings"

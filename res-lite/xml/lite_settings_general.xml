@@ -37,10 +37,4 @@
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="true" />
 
-    <com.lite.settings.preference.SystemSettingSwitchPreference
-        android:key="sensor_block"
-        android:title="@string/sensor_block_title"
-        android:summary="@string/sensor_block_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>
