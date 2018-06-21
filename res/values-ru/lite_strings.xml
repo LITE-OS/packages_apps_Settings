@@ -69,7 +69,88 @@
     <string name="font_picker_progress">Шрифт устанавливается\u2026</string>
     <string name="disable_fonts_installed_title">Выбор шрифта недоступен, чтобы избежать конфликтов с Substratum. Удалите его, если хотите использовать диспетчер шрифтов.</string>
 
-    <!-- Notification log -->
+<!-- Notification log -->
     <string name="notification_log_summary">Показать историю уведомлений</string>
+
+<!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
+
+<!-- App Ops Settings -->
+<!-- App Ops Categories -->
+  <string name="app_ops_cat_location">Местоположение</string>
+  <string name="app_ops_cat_personal">Персональное</string>
+  <string name="app_ops_cat_messaging">Сообщения</string>
+  <string name="app_ops_cat_media">Медиа</string>
+  <string name="app_ops_cat_device">Устройство</string>
+  <string name="app_ops_cat_bootup">Загрузка</string>
+<!-- [CHAR LIMIT=NONE] App ops labels -->
+  <string name="app_ops_access_camera">камера</string>
+  <string name="app_ops_access_notifications">Уведомления</string>
+  <string name="app_ops_activate_vpn">VPN</string>
+  <string name="app_ops_auto_start">автозапуск</string>
+  <string name="app_ops_delete_call_log">удалить журнал вызовов</string>
+  <string name="app_ops_delete_contacts">удаление контактов</string>
+  <string name="app_ops_delete_mms">удаление MMS</string>
+  <string name="app_ops_delete_sms">удаление SMS</string>
+  <string name="app_ops_draw_on_top">отображение поверх других элементов</string>
+  <string name="app_ops_get_usage_stats">получение статистики использования</string>
+  <string name="app_ops_keep_device_awake">активный режим</string>
+  <string name="app_ops_make_phone_call">осуществление вызова</string>
+  <string name="app_ops_modify_calendar">изменение данных календаря</string>
+  <string name="app_ops_modify_call_log">изменение журнала звонков</string>
+  <string name="app_ops_modify_clipboard">изменение буфера обмена</string>
+  <string name="app_ops_modify_contacts">изменение данных контактов</string>
+  <string name="app_ops_modify_settings">изменение настроек</string>
+  <string name="app_ops_play_audio">воспроизводить аудио</string>
+  <string name="app_ops_post_notification">выведение уведомлений</string>
+  <string name="app_ops_project_media">выполнить трансляцию контента</string>
+  <string name="app_ops_read_calendar">чтение данных календаря</string>
+  <string name="app_ops_read_call_log">просмотр журнала вызовов</string>
+  <string name="app_ops_read_clipboard">чтение буфера обмена</string>
+  <string name="app_ops_read_contacts">чтение контактов</string>
+  <string name="app_ops_read_mms">чтение MMS</string>
+  <string name="app_ops_read_sms">чтение SMS</string>
+  <string name="app_ops_receive_sms">получение SMS</string>
+  <string name="app_ops_record_audio">запись аудио</string>
+  <string name="app_ops_send_mms">отправка MMS</string>
+  <string name="app_ops_send_sms">отправка SMS</string>
+  <string name="app_ops_toast_window">всплывающие сообщения</string>
+  <string name="app_ops_use_alarm_volume">громкость будильника</string>
+  <string name="app_ops_use_audio_focus">аудиофокус</string>
+  <string name="app_ops_use_bluetooth_volume">Громоксть Bluetooth</string>
+  <string name="app_ops_use_master_volume">общая громкость</string>
+  <string name="app_ops_use_media_buttons">кнопки мультимедиа</string>
+  <string name="app_ops_use_media_volume">громкость мультимедиа</string>
+  <string name="app_ops_use_notification_volume">громкость уведомлений</string>
+  <string name="app_ops_use_ring_volume">громкость звонка</string>
+  <string name="app_ops_use_vibrate">виброотклик</string>
+  <string name="app_ops_use_voice_volume">громкость при разговоре</string>
+  <string name="app_ops_write_mms">создание MMS</string>
+  <string name="app_ops_use_fingerprint">отпечатки</string>
+  <string name="app_ops_add_voicemail">Голосовая почта</string>
+  <string name="app_ops_read_phone_state">Доступ к состоянию телефона</string>
+  <string name="app_ops_scan_wifi">Сканирование WiFi сетей</string>
+  <string name="app_ops_change_wallpaper">Сменить обои</string>
+  <string name="app_ops_assist_structure">Структура ассистента</string>
+  <string name="app_ops_assist_screenshot">Скриншот</string>
+  <string name="app_ops_use_body_sensors">Нательные датчики</string>
+  <string name="app_ops_read_cell_broadcasts">Широковещательная передача</string>
+  <string name="app_ops_mock_location">Фиктивное местоположение</string>
+  <string name="app_ops_read_external_storage">Чтение с внеш. носителя</string>
+  <string name="app_ops_write_external_storage">Запись на внеш. носитель</string>
+  <string name="app_ops_turn_on_screen">Включение экрана</string>
+  <string name="app_ops_get_accounts">Аккаунт устройства</string>
+  <string name="app_ops_run_in_background">Работать в фоновом режиме</string>
+  <string name="app_ops_accessibility_volume">доступность объем</string>
+  <string name="app_ops_read_phone_numbers">Читать номер телефона</string>
+  <string name="app_ops_request_install_packages">Установить пакет</string>
+  <string name="app_ops_picture_in_picture">PiP</string>
+  <string name="app_ops_app_start_foreground">Запускаться на переднем плане</string>
+  <string name="app_ops_answer_phone_calls">Ответить на звонок</string>
+  <string name="app_ops_boot_completed">Автозапуск</string>
+
+  <string name="twilight_mode_location_dialog">Обнаружение местоположения отключено</string>
+  <string name="twilight_mode_location_disabled">Доступ к местоположению отключен</string>
+  <string name="twilight_mode_location_enable">Включить</string>
 
 </resources>

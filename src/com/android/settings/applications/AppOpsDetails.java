@@ -41,10 +41,12 @@ import android.widget.TextView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.core.InstrumentedPreferenceFragment;
+import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.widget.EntityHeaderController;
+import static com.android.settings.widget.EntityHeaderController.ActionType;
 
 import java.util.List;
 
@@ -64,10 +66,16 @@ public class AppOpsDetails extends InstrumentedPreferenceFragment {
     // Utility method to set application label and icon.
     private void setAppLabelAndIcon(PackageInfo pkgInfo) {
         final View appSnippet = mRootView.findViewById(R.id.app_snippet);
+        final Activity context = getActivity();
         CharSequence label = mPm.getApplicationLabel(pkgInfo.applicationInfo);
         Drawable icon = mPm.getApplicationIcon(pkgInfo.applicationInfo);
-        setupAppSnippet(appSnippet, label, icon,
-                pkgInfo != null ? pkgInfo.versionName : null);
+        CharSequence version = getString(R.string.version_text, pkgInfo.versionName);
+        EntityHeaderController.newInstance(context, this, appSnippet)
+                .setLabel(label)
+                .setIcon(icon)
+                .setSummary(version)
+                .setButtonActions(ActionType.ACTION_NONE, ActionType.ACTION_NONE)
+                .done(context, true /* rebindActions */);
     }
 
     private String retrieveAppEntry() {
@@ -112,20 +120,6 @@ public class AppOpsDetails extends InstrumentedPreferenceFragment {
                         mOperationsSection, false);
                 mOperationsSection.addView(view);
                 String perm = AppOpsManager.opToPermission(firstOp.getOp());
-                if (perm != null) {
-                    try {
-                        PermissionInfo pi = mPm.getPermissionInfo(perm, 0);
-                        if (pi.group != null && !lastPermGroup.equals(pi.group)) {
-                            lastPermGroup = pi.group;
-                            PermissionGroupInfo pgi = mPm.getPermissionGroupInfo(pi.group, 0);
-                            if (pgi.icon != 0) {
-                                ((ImageView)view.findViewById(R.id.op_icon)).setImageDrawable(
-                                        pgi.loadIcon(mPm));
-                            }
-                        }
-                    } catch (NameNotFoundException e) {
-                    }
-                }
                 ((TextView)view.findViewById(R.id.op_name)).setText(
                         entry.getSwitchText(mState));
                 ((TextView)view.findViewById(R.id.op_time)).setText(

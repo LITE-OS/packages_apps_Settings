@@ -1210,11 +1210,10 @@
             </intent-filter>
         </activity>
 
-        <!--
         <activity android:name="Settings$AppOpsSummaryActivity"
                 android:label="@string/app_ops_settings"
                 android:taskAffinity=""
-                android:enabled="false">
+                android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APP_OPS_SETTINGS" />
@@ -1225,7 +1224,6 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.applications.AppOpsSummary" />
         </activity>
-        -->
 
         <activity android:name="Settings$BackgroundCheckSummaryActivity"
                 android:label="@string/background_check_title"
@@ -3333,6 +3331,46 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.display.AmbientDisplaySettings"/>
         </activity>
+
+<!-- QuickSettings activity. -->
+        <activity android:name=".Settings$QuickSettingsActivity"
+                android:label="@string/quicksettings_category"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.lite.settings.fragments.QuickSettings" />
+        </activity>
+
+<!-- Notification settings activity. -->
+        <activity android:name="Settings$NotificationSettingsActivity"
+                android:label="@string/notification_settings_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.lite.settings.fragments.NotificationSettings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+<!-- Expanded desktop settings activity. -->
+        <activity android:name="Settings$ExpandedDesktopSettingsActivity"
+                 android:label="@string/expanded_desktop_category"
+                 android:excludeFromRecents="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.lite.settings.fragments.ExpandedDesktop" />
+             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                 android:value="true" />
+         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
