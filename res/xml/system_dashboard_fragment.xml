@@ -19,6 +19,13 @@
     android:title="@string/header_category_system">
 
     <Preference
+        android:title="@string/buttons_title"
+        android:summary="@string/buttons_summary"
+        android:icon="@drawable/ic_settings_buttons"
+        android:order="-251"
+        android:fragment="com.lite.settings.fragments.ButtonsSettings" />
+
+    <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
