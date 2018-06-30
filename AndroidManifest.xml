@@ -373,7 +373,6 @@
         <activity android:name="Settings$ApnSettingsActivity"
                 android:label="@string/apn_settings"
                 android:launchMode="singleTask"
-                android:taskAffinity="com.android.settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:parentActivityName="Settings$NetworkDashboardActivity"
                 android:process="com.android.phone">
@@ -434,6 +433,7 @@
 
         <activity android:name=".bluetooth.DevicePickerActivity"
                 android:label="@string/device_picker"
+                android:configChanges="orientation|keyboardHidden|screenSize"
                 android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.bluetooth.devicepicker.action.LAUNCH" />
@@ -1343,6 +1343,8 @@
         </activity>
 
         <activity android:name="SetFullBackupPassword"
+                android:label="@string/local_backup_password_title"
+                android:parentActivityName="Settings$DevelopmentSettingsActivity"
                 android:exported="false">
         </activity>
 
@@ -2810,6 +2812,8 @@
                 android:value="com.android.settings.category.ia.wireless" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.sim.SimSettings" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/summary_empty"/>
         </activity>
 
         <activity android:name=".sim.SimPreferenceDialog"
@@ -2842,7 +2846,6 @@
         </activity>
 
         <activity android:name=".sim.SimDialogActivity"
-                android:theme="@*android:style/Theme.DeviceDefault.Settings.Dialog.NoActionBar"
                 android:label="@string/sim_settings_title"
                 android:excludeFromRecents="true">
             <intent-filter>
@@ -3029,7 +3032,7 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
             <intent-filter android:priority="60">
-                <action android:name="com.android.settings.action.SETTINGS" />
+                <!--action android:name="com.android.settings.action.SETTINGS" /-->
             </intent-filter>
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/summary_empty"/>

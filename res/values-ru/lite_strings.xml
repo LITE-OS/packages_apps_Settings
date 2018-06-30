@@ -153,4 +153,33 @@
   <string name="twilight_mode_location_disabled">Доступ к местоположению отключен</string>
   <string name="twilight_mode_location_enable">Включить</string>
 
+  <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> — <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">отключена</string>
+  <string name="sim_missing">отсутствует или неисправна</string>
+  <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
+  <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+  <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена и SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы действительно хотите продолжить?</string>
+  <string name="sim_enabler_airplane_on">Выполнение операции невозможно при включённом режиме полёта.</string>
+  <string name="sim_enabler_in_call">Выполнение операции невозможно во время вызова.</string>
+  <string name="sim_enabler_both_inactive">Невозможно отключить все SIM-карты</string>
+  <string name="sim_enabler_enabling">Включение/u2026</string>
+  <string name="sim_enabler_disabling">Отключение\u2026</string>
+  <string name="sub_activate_success">SIM-карта включена.</string>
+  <string name="sub_activate_failed">Ошибка активации.</string>
+  <string name="sub_deactivate_success">SIM-карта отключена.</string>
+  <string name="sub_deactivate_failed">Ошибка при отключении.</string>
+
+  <!-- Proximity wake -->
+  <string name="proximity_wake_title">Предотвращать случайные пробуждения</string>
+  <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
+
+  <!-- Security dialog -->
+  <string name="security_dialog_title">Обновления безопасности</string>
+  <string name="security_dialog_neutral_button">Бюллетени безопасности AOSP</string>
+  <string name="android_security_title">Обновление системы безопасности</string>
+  <string name="android_security_summary">Обновления безопасности Android - сборник патчей платформы Android и проприетарных бинарных файлов, с помощью которых она работает. Так как исходный код этих бинарных файлов закрыт, нам приходится надеяться на то, что поставщики предоставят их производителям, а производители - пользователям, чтобы мы могли добавить их в наши сборки. В связи с тем, что мы не можем контролировать этот процесс, хочется прояснить, что обновления безопасности мы устанавливаем только в тех ветках, которые исходят от Android Open Source Project. Чаще всего обновления безопасности будут те же, что и на последней стоковой прошивке.</string>
+  <string name="android_functional_updates_title">Функциональные обновления</string>
+  <string name="android_functional_updates_summary">Помимо обновлений безопасности AOSP мы также включаем функциональные обновления от Google. Это патчи, которые Google рассылает вдогонку обновлениям безопасности для устройств Pixel с исправлениями функциональных проблем, например, соединения, стабильности и быстродействия. Так как мы поддерживаем не только Pixel, они включаются для всех наших устройств.</string>
+
 </resources>
