@@ -70,12 +70,6 @@
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"
         settings:keywords="@string/keywords_color_mode" />
 
-    <Preference
-        android:key="font_size"
-        android:title="@string/title_font_size"
-        android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
-        settings:keywords="@string/keywords_display_font_size" />
-
     <com.android.settings.display.ScreenZoomPreference
         android:key="screen_zoom"
         android:title="@string/screen_zoom_title"
@@ -133,11 +127,11 @@
             android:persistent="false"
             android:entries="@array/systemui_theme_style_entries"
             android:entryValues="@array/systemui_theme_style_values" />
-            
+
         <Preference
             android:key="accent_picker"
             android:title="@string/theme_accent_picker_title"
-            android:summary="@string/theme_accent_picker_summary" />    
+            android:summary="@string/theme_accent_picker_summary" />
 
         <com.android.settings.display.FontDialogPreference
             android:key="custom_font"
@@ -145,15 +139,16 @@
             android:persistent="false" />
 
         <Preference
+            android:key="font_size"
+            android:title="@string/title_font_size"
+            android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
+            settings:keywords="@string/keywords_display_font_size" />
+
+        <Preference
             android:key="quicksettings"
             android:fragment="com.lite.settings.fragments.QuickSettings"
             android:title="@string/quicksettings_category"
             android:summary="@string/quicksettings_summary" />
-
-        <Preference
-            android:title="@string/general_title"
-            android:summary="@string/general_summary"
-            android:fragment="com.lite.settings.fragments.GeneralSettings" />
 
         <Preference
             android:key="expanded_desktop"
