@@ -91,6 +91,22 @@ import com.android.settings.wifi.WifiSettings;
 import java.util.Collection;
 import java.util.HashMap;
 
+import com.lite.settings.LiteSettings;
+import com.lite.settings.fragments.BatterySettings;
+import com.lite.settings.fragments.ButtonsSettings;
+import com.lite.settings.fragments.GeneralSettings;
+import com.lite.settings.fragments.ClockDateSettings;
+import com.lite.settings.fragments.SuspendActions;
+import com.lite.settings.fragments.LockScreenSettings;
+import com.lite.settings.fragments.NavigationBarSettings;
+import com.lite.settings.fragments.NotificationSettings;
+import com.lite.settings.fragments.NotificationStyleSettings;
+import com.lite.settings.fragments.QuickSettings;
+import com.lite.settings.fragments.StatusBarSettings;
+import com.lite.settings.fragments.Traffic;
+import com.lite.settings.fragments.led.BatteryLightSettings;
+import com.lite.settings.fragments.led.NotificationLightSettings;
+
 public final class SearchIndexableResources {
 
     /**
@@ -216,6 +232,23 @@ public final class SearchIndexableResources {
                 AutomaticStorageManagerSettings.class,
                 NO_DATA_RES_ID,
                 R.drawable.ic_settings_storage);
+
+        addIndex(BatterySettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(BatteryLightSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(ButtonsSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(ClockDateSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(GeneralSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(LockScreenSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(NavigationBarSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(NotificationLightSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(NotificationSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(NotificationStyleSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(QuickSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(StatusBarSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(SuspendActions.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(Traffic.class, NO_DATA_RES_ID, R.drawable.ic_android);
+        addIndex(LiteSettings.class, NO_DATA_RES_ID, R.drawable.ic_android);
+
     }
 
     private SearchIndexableResources() {
