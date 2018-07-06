@@ -18,6 +18,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<!-- Statusbar icon -->
+  <string name="status_bar_icon_blacklist_title">Значки в строке состояния</string>
+  <string name="status_bar_icon_blacklist_summary">Настроить какие иконки отображаются в строке состояния</string>
+
 <!-- LiteOS Settings -->
   <string name="lite_settings_activity">LiteOS</string>
   <string name="lite_settings_activity_summary">Дополнительные настройки</string>

@@ -154,6 +154,15 @@
             android:key="expanded_desktop"
             android:fragment="com.lite.settings.fragments.ExpandedDesktop"
             android:title="@string/expanded_desktop_category" />
+
+        <Preference
+            android:title="@string/status_bar_icon_blacklist_title"
+            android:summary="@string/status_bar_icon_blacklist_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.systemui"
+                    android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
+        </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
