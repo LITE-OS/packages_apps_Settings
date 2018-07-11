@@ -168,6 +168,10 @@
             android:summary="@string/recents_ui_summary"
             android:fragment="com.lite.settings.fragments.RecentsUI" />
 
+        <Preference
+            android:title="@string/corner_radius"
+            android:fragment="com.lite.settings.fragments.CornersFragment" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
