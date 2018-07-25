@@ -18,13 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/header_category_system">
 
-    <!-- Changelog -->
-    <Preference
-        android:key="changelog"
-        android:title="@string/changelog_custom_title"
-        android:summary="@string/changelog_custom_summary"
-        android:icon="@drawable/ic_changelog"
-        android:fragment="com.android.settings.custom.Changelog" />
+    <PreferenceScreen
+        android:key="about"
+        android:icon="@drawable/ic_lite_about"
+        android:title="@string/about_lite_settings_title"
+        android:summary="@string/about_lite_settings_summary"
+        android:fragment="com.lite.settings.fragments.about.About" />
 
     <Preference
         android:title="@string/general_title"
