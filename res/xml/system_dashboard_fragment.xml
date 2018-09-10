@@ -21,6 +21,13 @@
     android:title="@string/header_category_system"
     settings:initialExpandedChildrenCount="4">
 
+    <PreferenceScreen
+        android:key="about"
+        android:icon="@drawable/ic_lite_about"
+        android:title="@string/about_lite_settings_title"
+        android:summary="@string/about_lite_settings_summary"
+        android:fragment="com.lite.settings.fragments.about.About" />
+
     <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
