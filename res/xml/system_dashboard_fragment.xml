@@ -24,9 +24,18 @@
     <PreferenceScreen
         android:key="about"
         android:icon="@drawable/ic_lite_about"
+        android:order="-269"
         android:title="@string/about_lite_settings_title"
         android:summary="@string/about_lite_settings_summary"
         android:fragment="com.lite.settings.fragments.about.About" />
+
+    <PreferenceScreen
+        android:key="lite"
+        android:icon="@drawable/ic_lite_settings"
+        android:order="-268"
+        android:title="@string/lite_settings_title"
+        android:summary="@string/lite_settings_summary"
+        android:fragment="com.lite.settings.LiteSettings" />
 
     <Preference
         android:key="gesture_settings"
