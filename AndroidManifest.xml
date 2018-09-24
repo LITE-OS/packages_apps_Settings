@@ -3326,5 +3326,38 @@
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+    <!-- Lite Open Source -->
+
+        <!-- Settings activity -->
+        <activity android:name=".Settings$LiteSettingsActivity"
+                  android:label="@string/lite_settings_title">
+            <intent-filter android:priority="12">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.lite.settings.LiteSettings"/>
+        </activity>
+
+        <!-- Interaction -->
+        <activity android:name=".Settings$LiteSettingsInteractionActivity"
+                  android:label="@string/lite_settings_interaction_title">
+            <intent-filter android:priority="11">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.lite.settings.LiteSettingsInteraction"/>
+        </activity>
+
+        <!-- Inerface -->
+        <activity android:name=".Settings$LiteSettingsInterfaceActivity"
+                  android:label="@string/lite_settings_interface_title">
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.lite.settings.LiteSettingsInterface"/>
+        </activity>
+
     </application>
 </manifest>
