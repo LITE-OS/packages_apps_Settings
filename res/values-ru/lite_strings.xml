@@ -17,6 +17,10 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвращать случайные пробуждения</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
+
     <!-- SystemUI theme -->
     <string name="theme_category_title">Темы устройства</string>
     <string name="systemui_theme_style_title">Тема интерфейса</string>
