@@ -36,6 +36,12 @@
         android:key="notification_pulse"
         android:title="@string/notification_pulse_title"/>
 
+    <!-- Flash ON Call -->
+    <Preference
+        android:key="flash_on_call"
+        android:title="@string/flashlight_on_call_title"
+        android:fragment="com.lite.settings.fragments.FlashOnCall" />
+
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_default_ringtone"
