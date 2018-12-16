@@ -27,4 +27,16 @@
     <string name="corner_radius">Закругление углов</string>
     <string name="corner_fwvals">Настройки фреймворка</string>
     <string name="corner_fwvals_summary">Если устройство имеет реальные закругленные углы</string>
+
+    <!-- QS Settings -->
+    <string name="qs_panel_alpha_title">Непрозрачность</string>
+    <string name="qs_show_brightness_title">Регулятор яркости</string>
+    <string name="qs_show_brightness_summary">Показать регулятор яркости в панели быстрых настроек</string>
+    <string name="qs_brightness_position_bottom_title">Регулятор яркости внизу</string>
+    <string name="qs_brightness_position_bottom_summary">Показать регулятор яркости внизу панели быстрых настроек</string>
+    <string name="qs_footer_warnings_title">Предупреждение в нижней части</string>
+    <string name="qs_footer_warnings_summary">Показывать предупреждение в нижней панели быстрых настроек, когда сеть контролируется приложениями или VPN</string>
+    <string name="quick_settings_vibrate_title">Вибрация при касании</string>
+    <string name="quick_settings_vibrate_summary">Вибрировать при касании плиток</string>
+    <string name="quicksettings_title">Панель быстрых настроек</string>
 </resources>

@@ -45,4 +45,10 @@
         settings:controller="com.android.settings.display.FontSizePreferenceController"
         settings:keywords="@string/keywords_display_font_size" />
 
+    <!-- Quick Settings -->
+    <Preference
+        android:key="quicksettings_category"
+        android:title="@string/quicksettings_title"
+        android:fragment="com.lite.settings.fragments.QuickSettings" />
+
 </PreferenceScreen>
