@@ -48,14 +48,20 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.lite.LiteUtils;
 import com.lite.settings.fragments.FontDialogPreference;
+import com.lite.settings.preference.CustomSeekBarPreference;
+import com.lite.settings.preference.SecureSettingSwitchPreference;
 
 public class LiteDisplay extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_FONT_PICKER_FRAGMENT_PREF = "custom_font";
     private static final String SUBS_PACKAGE = "projekt.substratum";
+    private static final String SYSUI_ROUNDED_SIZE = "sysui_rounded_size";
 
     private FontDialogPreference mFontPreference;
     private IFontService mFontService;
+    private CustomSeekBarPreference mCornerRadius;
+
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +69,9 @@ public class LiteDisplay extends SettingsPreferenceFragment implements Preferenc
         addPreferencesFromResource(R.xml.display_settings_lite);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        mContext = getContext();
 
+        // Font
         mFontPreference =  (FontDialogPreference) findPreference(KEY_FONT_PICKER_FRAGMENT_PREF);
         mFontService = IFontService.Stub.asInterface(
                 ServiceManager.getService("fontservice"));
@@ -73,6 +81,14 @@ public class LiteDisplay extends SettingsPreferenceFragment implements Preferenc
             mFontPreference.setSummary(getActivity().getString(
                     R.string.disable_fonts_installed_title));
         }
+
+        // Rounded Corner Radius
+        mCornerRadius = (CustomSeekBarPreference) findPreference(SYSUI_ROUNDED_SIZE);
+        int cornerRadius = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, 25);
+        mCornerRadius.setValue(cornerRadius / 1);
+        mCornerRadius.setOnPreferenceChangeListener(this);
+
     }
 
     private FontInfo getCurrentFontInfo() {
@@ -95,6 +111,11 @@ public class LiteDisplay extends SettingsPreferenceFragment implements Preferenc
 
 //  @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mCornerRadius) {
+            int value = (Integer) objValue;
+            Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.SYSUI_ROUNDED_SIZE, value * 1);
+        }
         return true;
     }
 

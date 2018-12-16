@@ -15,6 +15,23 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lite_display">
 
+    <!-- Rounded corners -->
+    <com.lite.settings.preference.SecureSettingSwitchPreference
+        android:key="sysui_rounded_fwvals"
+        android:title="@string/corner_fwvals"
+        android:summary="@string/corner_fwvals_summary"
+        android:defaultValue="true"
+        android:disableDependentsState="true" />
+
+    <com.lite.settings.preference.CustomSeekBarPreference
+        android:key="sysui_rounded_size"
+        android:title="@string/corner_radius"
+        android:max="25"
+        settings:min="0"
+        settings:units=""
+        android:persistent="false"
+        android:dependency="sysui_rounded_fwvals" />
+
     <!-- Font -->
     <com.lite.settings.fragments.FontDialogPreference
         android:key="custom_font"
