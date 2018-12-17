@@ -29,7 +29,6 @@
     <string name="corner_fwvals_summary">Если устройство имеет реальные закругленные углы</string>
 
     <!-- QS Settings -->
-    <string name="qs_panel_alpha_title">Непрозрачность</string>
     <string name="qs_show_brightness_title">Регулятор яркости</string>
     <string name="qs_show_brightness_summary">Показать регулятор яркости в панели быстрых настроек</string>
     <string name="qs_brightness_position_bottom_title">Регулятор яркости внизу</string>
