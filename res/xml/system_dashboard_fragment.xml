@@ -22,6 +22,14 @@
     settings:initialExpandedChildrenCount="4">
 
     <Preference
+        android:key="button_settings"
+        android:icon="@drawable/ic_settings_buttons"
+        android:order="-251"
+        android:title="@string/button_settings_title"
+        android:summary="@string/button_settings_summary"
+        android:fragment="com.lite.settings.fragments.ButtonsSettings" />
+
+    <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
         android:icon="@drawable/ic_settings_gestures"
