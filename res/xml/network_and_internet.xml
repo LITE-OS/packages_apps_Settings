@@ -101,4 +101,11 @@
         android:positiveButtonText="@string/save"
         android:negativeButtonText="@android:string/cancel" />
 
+    <Preference
+        android:key="traffic"
+        android:icon="@drawable/ic_network_traffic"
+        android:fragment="com.lite.settings.fragments.Traffic"
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary" />
+
 </PreferenceScreen>

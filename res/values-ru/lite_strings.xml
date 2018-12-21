@@ -62,4 +62,14 @@
     <string name="button_settings_title">Кнопки</string>
     <string name="button_settings_summary">Назначить действия на нажатия</string>
     <string name="hardware_keys_wake_title">Пробуждение девайса</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Индикатор трафика</string>
+    <string name="network_traffic_summary">Индикатор активности сети в статусбаре</string>
+    <string name="network_traffic_state_title">Показывать индикатор сетевого трафика в строке состояния</string>
+    <string name="network_traffic_autohide_threshold_title">Порог автосрытия индикатора сетевого трафика (КБ/с)</string>
+    <string name="show_network_traffic_disable">Выключить</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
 </resources>
